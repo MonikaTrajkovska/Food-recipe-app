@@ -1,6 +1,7 @@
-import React from 'react'
+ import React from 'react'
 
 const MovieInfo =(props)=>{
+    console.log(props)
 return(
     <div className='container'>
         <div className='row' onClick={props.closeMovieInfo} style={{cursor:"pointer", paddingTop:50}}>
@@ -9,16 +10,23 @@ return(
         </div>
         <div className="row">
             <div className="col s12 m4">
-            {props.currentMovie.poster_path == null ? <img src={`https://s3-ap-southeast-1.amazonaws.com/upcode/static/default-image.jpg`} alt="card image" style={{ width: "100%",
-                            height: 360}}/> : <img src={`http://image.tmdb.org/t/p/w185${props.currentMovie.poster_path}`} alt="card image" style={{ width: "100%",
-                            height: 360}}/>  }
-
+            
+          
             </div>
             <div className='col s12 m8'>
     <div className="info-container">
-<p>{props.currentMovie.title}</p>
-<p>{props.currentMovie.release_date.substring(6).split("-").concat(props.currentMovie.release_date.substring(0, 4)).join("/")}</p>
-<p>{props.currentMovie.overview}</p>
+     
+           <h1>Title of info</h1>
+           <ol>
+             {props.currentMovie.recipe.ingredients.map((ingredient)=>(
+               <li>{ingredient.text}</li>
+             ))}
+           </ol>
+
+<p>{props.currentMovie.recipe.label}</p>
+<p>{props.currentMovie.recipe.healthLabels}</p>
+
+
     </div>
         </div>
 
@@ -28,3 +36,25 @@ return(
 )
 }
 export default MovieInfo
+// export default class MovieInfo extends React.Component {
+//     state = { showDetails: '' }
+
+//     toggleShowDetails = () => this.setState(prevState => ({ showDetails: !this.state.showDetails }))     
+
+//     render = () => (
+//       <div>
+//         <h1>{this.props.recipeName} Recipe</h1>
+//         <button onClick={this.state.toggleShowDetails}>{`${!this.state.showDetails ? "Show" : "Hide"}`}   Recipe</button>
+//         {
+//             this.state.showDetails && 
+//             <ul>
+//                 {this.props.recipeDetail.map(ingredient =>(
+//                     <li key={ingredient}>ingredient</li>
+//                 ))}
+//             </ul>
+//         }
+//    </div>
+        
+         
+//     )}
+        

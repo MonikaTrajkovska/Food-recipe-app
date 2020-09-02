@@ -1,16 +1,17 @@
 {
-  "homepage":"http://MonikaTrajkovska.github.io/Movie-app",
+  "homepage": "http://MonikaTrajkovska.github.io/Movie-app",
   "name": "dbmovie",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "2.1.3"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

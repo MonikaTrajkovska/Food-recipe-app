@@ -1,13 +1,13 @@
 import React from 'react'
-
+import './Nav.css'
 
 const Nav=()=>{
     return(
-        <nav>
-            <div className="nav-wrapper container">
-               <a href="#" className="brand-logo">Movie finder</a>
+        <div className='topnav'>
+            <div >
+               <a href="#" >Recipe Application </a>
             </div>
-        </nav>
+            </div>
     )
 }
 export default Nav

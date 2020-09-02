@@ -1,20 +1,34 @@
 import React from 'react'
-
+import { Link } from "react-router-dom";
 const Movie =(props)=>{
+  // console.log({recipe})
+  console.log(props.label)
+  
+  
   return(
-      <div className='col s12 m6 l3'>
-          <div className="card">
-              <div className="card-image waves-effect waves-block waves-light">
-              { props.image == null ? <img className="" src={`https://s3-ap-southeast-1.amazonaws.com/upcode/static/default-image.jpg`} alt="Card image cap" style={{ width: "100%",
-                        height: 360}}/> : <img className="" src={`http://image.tmdb.org/t/p/w185${props.image}`} alt="Card image cap" style={{ width: "100%",
-                        height: 360}} />}
+      <div >
+          
+              
+                <h2>Ttile</h2>
+                <h1>{props.label}</h1>
+              
+             <p>{props.calories}</p> 
+           <img src={props.image} alt="slika"/>
+          
+           {/* <ol>
+             {props.ingredients.map((ingredient)=>(
+               <li>{ingredient.text}</li>
+             ))}
+           </ol> */}
 
-              </div>
-              <div className="card-content">
-                <p><a href="#" onClick={()=>props.viewMovieInfo(props.movieId)}>View details </a></p>
-            </div>
+
+            <a href={props.url} target="blank" role="button">View Recipe</a>
+
+               <div className="card-content">
+               <p><a href="#" onClick={()=>props.viewMovieInfo()}>View details </a></p>
+            </div> 
           </div>
-      </div>
+      
   )
 }
 export default Movie
