@@ -5,7 +5,7 @@ import Search from './Search'
 // import Pagination from './Pagination'
  import MovieInfo from './MovieInfo'
 import Movie from './Movie'
-
+import './App.css'
 class App  extends React.Component{
     constructor(){
         super()
@@ -77,7 +77,7 @@ class App  extends React.Component{
         console.log(this.state.recipes)
         // const numberPages=Math.floor(this.state.totalResults / 20);
         return  (
-            <div >
+            <div className='main-page'>
 
 <Nav/>
 {this.state.currentMovie == null ? <div><Search handleSubmit={this.handleSubmit} handleChange={this.handleChange}/><MovieList viewMovieInfo={this.viewMovieInfo} recipes={this.state.recipes} /></div>

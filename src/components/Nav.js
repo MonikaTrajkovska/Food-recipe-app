@@ -3,9 +3,9 @@ import './Nav.css'
 
 const Nav=()=>{
     return(
-        <div className='topnav'>
+        <div className='nav-container'>
             <div >
-               <a href="#" >Recipe Application </a>
+               <h5>RECIPE APPLICATION </h5>
             </div>
             </div>
     )

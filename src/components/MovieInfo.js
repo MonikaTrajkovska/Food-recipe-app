@@ -25,7 +25,7 @@ return(
 
 <p>{props.currentMovie.recipe.label}</p>
 <p>{props.currentMovie.recipe.healthLabels}</p>
-
+<a href={props.url} target="blank" role="button">View Recipe</a>
 
     </div>
         </div>
