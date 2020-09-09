@@ -12,13 +12,14 @@
     background-size: 100% ;
 }
 .search-container input[type=text] {
-    /* padding: 6px; */
+
     margin-top: 8px;
     font-size: 17px;
     font-weight: bold;
     border: 1px solid #8d6700;
     border-radius: 5px;
     width: 15%;
+    text-align: center;
   }
   .search-container ::placeholder{
       color: #5e480b;
@@ -35,7 +36,7 @@
     font-weight: bold;
     border: none;
     cursor: pointer;
-    /* height: 25%; */
+
   }
 
   @media screen and (max-width: 600px) {
@@ -44,10 +45,10 @@
     }
     .search-container a, .search-container input[type=text], .search .search-container button {
       float: none;
-      
       text-align: center;
       width: 100%;
       margin: 0;
+      margin-top: 10px;
      
     }
     .search-container input[type=text] {

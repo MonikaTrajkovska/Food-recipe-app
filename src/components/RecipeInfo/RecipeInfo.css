@@ -1,0 +1,130 @@
+body {
+
+    
+    background-size:80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    
+    font-family: 'Prompt', sans-serif;
+  }
+#alert{
+     position: fixed; 
+    width: 600%;
+  max-width: 100%;
+  height: 400%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.59);
+    margin-left: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    overflow: auto;
+}
+
+#alert-container {
+    position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+    width: 840px;
+     height: 525px; 
+    background: #fff; 
+    padding: 50px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+      margin: auto; 
+     overflow: auto;
+}
+
+#alert-text-container {
+    color: #575757;
+   
+ 
+}
+#alert-text-container a{
+    margin-left: -10px;
+}
+#alert-text-container h1 {
+    font-size: 20px; 
+    font-weight: bold; 
+    color:#8d6700 ;
+    margin: 0 0 20px 0;
+} 
+ul {
+    margin: 10px 0 10px 30px;
+  }
+  li, p {
+    margin: 0 0 10px 0;
+  }
+
+#alert-buttons {
+    
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+}
+
+.alert-btn {
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    outline: 0;
+    border:  0;
+}
+
+#cancel-alert-btn {
+    color: #575757;
+    background: transparent;
+}
+
+#delete-alert-btn {
+    color: #fff;
+    background: #576574;
+    box-shadow: 0px 0px 16px  rgba(0, 0, 0, 0.17);   
+}
+img{
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+}
+.paragraph-by{
+    font-size: 18px;
+    font-style: italic;
+}
+h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 550;
+}
+.serves-div{
+    padding-bottom: 10px;
+    padding-top: -80px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-left: 12px;
+    border-bottom: 4px double #8d6700;
+}
+.label-container{
+    border-top: 4px double #8d6700;
+    border-bottom: 4px double #8d6700;
+}
+@media screen and (max-width: 600px) {
+  #alert{
+      width: 100%;
+      margin-bottom: 15px;
+     height: 1500%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    #alert-container{
+        width: 100%;
+     
+      }
+    }
