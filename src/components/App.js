@@ -4,7 +4,7 @@ import Search from './Search/Search'
  import RecipeList from './RecipeList/RecipeList'
  import {v4 as uuidv4} from "uuid"
 
- import RecipeInfo from './RecipeInfo/RecipeInfo'
+
 
 
 class App  extends React.Component{
@@ -64,7 +64,7 @@ class App  extends React.Component{
 <Nav/>
 <div><Search handleSubmit={this.handleSubmit} handleChange={this.handleChange}/>
 <RecipeList   recipes={this.state.recipes} id={uuidv4()} /></div>
- />
+
 
 
 

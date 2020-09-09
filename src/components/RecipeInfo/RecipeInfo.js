@@ -1,6 +1,6 @@
 
 import React from "react";
-import { v4 as uuidv4 } from "uuid";
+
 import './RecipeInfo.css'
 
 const RecipeInfo = ({ ingredients,label,image,source,servings,healthLabels,dietLabels,url,hideModal }) => {
