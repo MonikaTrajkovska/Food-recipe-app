@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Food-recipe-app/precache-manifest.2f3de84cf7192f6fa7f5cde2d8cc804c.js"
+  "/Food-recipe-app/precache-manifest.a2a1c0a3f619b6ab074741ee4d10696a.js"
 );
 
 workbox.clientsClaim();
